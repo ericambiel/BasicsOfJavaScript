@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        body {
+            background-color: rgb(93, 93, 184);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgb(46, 204, 73)
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        //Number coverte para numero inteiro ou não
+        //String converte para cadeia de caracteres
+        var n1 = Number(window.prompt('Digite um numero.'))
+        var n2 = Number(window.prompt('Digite outro numero.'))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é: ${s}`)
+
+        //placeholder ${}
+        //tamplat String ` `
+
+        /*  s.length //Quantidade de caracteres
+            s.toUpperCase() //Tudo para maiusculo
+            s.toLowerCase() //Tudo para minusculo   
+        */
+
+        /*  n1.toFixed(2).replace('.',',') //Estabelece duas casa decimais depois do ponto e troca ponto por virgula
+            //Ficaria 1545.5 para 1545,50, onde n1 é uma variavel number
+
+            n1.toLocaleString('pt-BR', {style: 'curremcy'}, curremcy: 'BRL'})  //Converte para um string localizada para o Brasil, no estilo dinheiro (currency), na moeda(currency) brasileira
+            //Resultado: de 1545.5 para R$ 1,545.50
+        */
+    </script>
+</body>
+</html>
