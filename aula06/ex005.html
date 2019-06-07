@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(141, 30, 30);
+            color: white;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <!--<div id="msg">Clique em min</div>-->
+    <!--<div name="msg">Clique em min</div>-->
+    <div id="msg">Clique em min</div>
+    <script>
+        //Cria uma variavel body que recebe os estilos do corpo html
+        var _body = window.document.body
+        //Cria uma variavel p1 e pega um elemento da arvore DOM pelo seu nome igual a p na posição 0, ou seja o primeira tag <p>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        
+        //Escreve na tela o conteudo entre a primeira tag <p></p>
+        //window.document.write('Esta escrito assim: ' + p1.innerText)
+        //Escreve na tela o conteudo entre a primeira tag <p></p> herdando todos os objetos como o negrito de DOM
+        //window.document.write(p1.innerHTML)
+        //Mudar cor do paragra pela sua DOM
+        //p1.style.color = 'blue'
+        //Mudar cor do fundo do corpo pelo objeto DOM
+        //_body.style.background = 'black'
+        
+        /* Selecionando um objeto e modificando-o pelo ID
+        var div = window.document.getElementById('msg')
+        
+        style.background = 'green'
+        div.innerText = 'Estou aguardando...'   
+        */
+        
+        /* Selecionando um objeto e modificando-o pelo Nome
+        var d = window.document.getElementsByName('msg')[0]
+        
+        d.innerText = 'Olá!'
+        */
+        
+        //Muda o objeto DOM pelo objeto.id ou pelo obeto#class
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'blue'
+        
+        
+    </script>
+</body>
+</html>
