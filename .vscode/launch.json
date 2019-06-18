@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
+            "url": "file:///I:/Projetos/javascript-teste/aula14/Exerc%C3%ADcios_Propostos/ex016/modelo.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
