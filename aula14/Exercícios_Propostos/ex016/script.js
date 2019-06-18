@@ -3,6 +3,7 @@ function calcular() {
     var fim = Number(window.document.querySelector('input#txtfim').value)
     var inicio = Number(window.document.querySelector('input#txtinicio').value)
 
+    //Validação dos dados de entrada
     if (inicio > fim) {
         alert('[ERRO 01] - Início não pode ser maior doque o fim!')
         return
@@ -20,6 +21,7 @@ function calcular() {
     //Variavel recebe objeto res de modelo.html
     resultado = window.document.getElementById ('res')
 
+    //Popula elemento res em modelo.html com o resultado
     for (i=inicio,somatoria=inicio;i<=fim;i=i+passo) {
         resultado.innerHTML += String(somatoria) + " &#x1F449 "
         somatoria = somatoria + passo 
