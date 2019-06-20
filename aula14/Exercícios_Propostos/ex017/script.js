@@ -1,14 +1,21 @@
 function calcular() {
-    var multiplicador = document.querySelector('input#inpmult').valueAsNumber
+    let multiplicador = document.querySelector('input#inpmult')
+    let tabuada = document.getElementById('tabuada')
         
     if (document.querySelector('input#inpmult').value == "") {
         window.alert('Multilicador não pode ser vazio')
-        return
-    }
+    } else {
+        tabuada.innerHTML = ''
 
-    document.getElementById('tabuada').options[0].text = null
-
-    for (var i=0; i <= 10; i++) {
-        document.getElementById('tabuada').options[i].text = `${multiplicador} x ${i+1} = ` + multiplicador*(i+1)
+        for (let i=1; i <= 10; i++) {
+            //cria um elemento Option 
+            let item = document.createElement('option')
+            //Atribui um valor ao DOM text do elemento Option criado
+            item.text = `${multiplicador.valueAsNumber} x ${i} = ${multiplicador.valueAsNumber*i}`
+            //Atribui um valor ao DOM value do elemento Option criado
+            item.value = `v${i}`
+            //Adiciona os elementos criados antes dentro do elemento inpmult do HTML
+            tabuada.appendChild(item)
+        }
     }
 }
