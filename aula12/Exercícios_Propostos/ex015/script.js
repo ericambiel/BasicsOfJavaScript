@@ -16,8 +16,11 @@ function verificar(){
         // Se o elemento fsex 0 (rad Masculino) estiver clicado
         if (fsex[0].checked) {
             gênero = 'Homem'
-            if (idade >=0 && idade <10) {
-                //Criança
+            if (idade >=0 && idade <5) {
+                // Bebe
+                img.setAttribute('src', './Imagens/Tratadas/1-Ano-Homem.png')
+            } else if (idade < 10) {
+                // Criança
                 img.setAttribute('src', './Imagens/Tratadas/5-Anos-Homem.png')
             } else if (idade < 21) {
                 // Jovem
@@ -35,8 +38,11 @@ function verificar(){
         // Se o elemento fsex 1 (rad Feminino) estiver clicado
         } else if (fsex[1].checked) {
             gênero = 'Mulher'
-            if (idade >=0 && idade <10) {
-                //Criança
+            if (idade >=0 && idade <5) {
+                // Bebe
+                img.setAttribute('src', './Imagens/Tratadas/1-Ano-Mulher.png')
+            } else if (idade < 10) {
+                // Criança
                 img.setAttribute('src', './Imagens/Tratadas/5-Anos-Mulher.png')
             } else if (idade < 21) {
                 // Jovem

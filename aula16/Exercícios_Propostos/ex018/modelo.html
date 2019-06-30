@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+        <div>
+            <p id="padd">
+                Número (entre 1 e 100)
+                <input type="number" id="iptnum">
+                <input type="button" value="Adicionar" id="btnadd" onclick="add()">
+            </p>
+        </div>
+        <div>
+            <p>
+                <select id="sltnum" size="8">
+                    <option value="inicio">Digite um número acima</option>
+                </select>
+                <br><input type="button" value="Finalizar" onclick="finalizar()">
+            </p>
+        </div>
+        <div id="result">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Eric Ambiel</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
