@@ -41,6 +41,10 @@ function add() {
         item.text = num.valueAsNumber
         //Insere elemento option dentro do elemento select
         list.appendChild(item)
+        //Foca o cursor no campo iptnum
+        num.focus()
+        //Apaga valor do campo após ser add
+        num.value = ''
     } else {
         window.alert('Valor invalido ou já encontrado na lista.')
     }
